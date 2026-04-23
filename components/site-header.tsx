@@ -25,7 +25,7 @@ export function SiteHeader() {
           href="/get-started"
           className={`${primaryButtonClass} force-white-btn text-sm md:self-auto`}
         >
-          Get Started
+          Build My Website
         </Link>
       </PageContainer>
     </header>

@@ -10,8 +10,8 @@ type CtaBannerProps = {
 };
 
 export function CtaBanner({
-  title = "Ready to launch your website without building it yourself?",
-  buttonLabel = "Start Your Project",
+  title = "Ready to Build Your Website?",
+  buttonLabel = "Build My Website",
   buttonHref = "/get-started",
 }: CtaBannerProps) {
   return (
@@ -26,6 +26,9 @@ export function CtaBanner({
               <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
                 {title}
               </h2>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-white/75 sm:text-base">
+                Skip the confusion and start with a simpler way to get your business online.
+              </p>
             </div>
             <Link
               href={buttonHref}

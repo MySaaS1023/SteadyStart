@@ -11,22 +11,22 @@ export default function PricingPage() {
             Pricing
           </p>
           <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[var(--foreground)] sm:text-5xl">
-            Choose the package that matches your next stage.
+            Simple Pricing - No Monthly Platform Fees
           </h1>
           <p className="mt-5 text-lg leading-8 text-[var(--muted)]">
-            Every package is designed for a done-for-you website build, with the final
-            project shaped around your business goals.
+            Stop paying subscriptions just to have a website. Pay once and get your
+            site built.
           </p>
         </div>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {pricingPackages.map((pkg) => (
-            <PricingCard key={pkg.name} tier={pkg} />
+            <PricingCard key={pkg.key} tier={pkg} />
           ))}
         </div>
 
         <p className="mt-8 text-center text-sm leading-6 text-[var(--muted)]">
-          Project scope depends on package selected and final business needs.
+          No platform lock-in. No unnecessary tools. No monthly website platform fees.
         </p>
       </PageContainer>
     </section>

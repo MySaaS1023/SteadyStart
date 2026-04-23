@@ -1,4 +1,4 @@
-export type PackageName = "Starter" | "Business Site" | "Premium";
+export type PackageName = "Starter Website" | "Business Website" | "Premium";
 export type PackageKey = "starter" | "business" | "premium";
 
 export type PricingPackage = {
@@ -12,7 +12,7 @@ export type PricingPackage = {
 
 export const siteName = "Steady Start";
 export const siteTagline =
-  "Custom websites built for your business — without the DIY headache.";
+  "Build your business website without monthly platform fees or platform lock-in.";
 export const supportEmail = "support@steadystartco.com";
 
 export const navLinks = [
@@ -25,10 +25,10 @@ export const navLinks = [
 export const pricingPackages: PricingPackage[] = [
   {
     key: "starter",
-    name: "Starter",
+    name: "Starter Website",
     price: "$120",
     description:
-      "A simple company outlook site with front end build and payment setup.",
+      "A simple website for a business that needs a clean online presence.",
     features: [
       "front end build",
       "payment integration",
@@ -39,10 +39,10 @@ export const pricingPackages: PricingPackage[] = [
   },
   {
     key: "business",
-    name: "Business Site",
+    name: "Business Website",
     price: "$200",
     description:
-      "A stronger business website for service or product-based businesses.",
+      "A more complete website with added flexibility and pages for growing businesses.",
     features: [
       "front end build",
       "payment integration",
@@ -59,8 +59,8 @@ export const pricingPackages: PricingPackage[] = [
     description:
       "A full website build with front end, payment, integrations, and backend support.",
     features: [
-      "everything in Starter",
-      "everything in Business Site",
+      "everything in Starter Website",
+      "everything in Business Website",
       "backend included",
       "complete setup",
     ],
@@ -69,25 +69,33 @@ export const pricingPackages: PricingPackage[] = [
 
 export const valueProps = [
   {
-    title: "Done-for-you build",
+    title: "Custom-built for your business",
     description:
-      "You stay focused on your business while Steady Start handles the structure, design, and setup.",
+      "Your site is shaped around your business, your offer, and the online presence you need.",
   },
   {
-    title: "Built around your business",
+    title: "No monthly platform lock-in",
     description:
-      "Every site is shaped around your offer, your customer journey, and the pages you actually need.",
+      "Skip website platforms that keep you paying every month just to keep your site running.",
   },
   {
-    title: "Launch-ready setup",
+    title: "Simple and affordable",
     description:
-      "From payment flow to key integrations, your website is prepared for a confident launch instead of a half-finished draft.",
+      "Get a clear path to a finished website without confusing tools or unnecessary subscriptions.",
   },
 ];
 
 export const processSteps = [
-  "Choose your package",
-  "Fill out your project form",
-  "Share your business details",
-  "We build your website",
+  {
+    title: "Choose your website package",
+    description: "Pick the option that fits your business.",
+  },
+  {
+    title: "We build your website",
+    description: "Your site is created for your business and goals.",
+  },
+  {
+    title: "Launch with confidence",
+    description: "Go live with a clean, professional online presence.",
+  },
 ];

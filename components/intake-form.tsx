@@ -16,8 +16,8 @@ type IntakeFormProps = {
 };
 
 const packageLabelMap: Record<PackageKey, string> = {
-  starter: "Starter",
-  business: "Business Site",
+  starter: "Starter Website",
+  business: "Business Website",
   premium: "Premium",
 };
 
@@ -76,11 +76,12 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
             Project Intake
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[var(--foreground)] sm:text-4xl">
-            Tell us what you need and we&apos;ll guide the next step.
+            Request your custom website build.
           </h1>
           <p className="mt-4 text-sm leading-6 text-[var(--muted)] sm:text-base">
-            Choose your package, share your project details, and complete payment to
-            secure your website build.
+            Build your business website without monthly platform fees or platform
+            lock-in. Share your project details so Steady Start can understand what
+            your business needs.
           </p>
         </div>
 
@@ -134,8 +135,8 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
               <option value="" disabled={!selectedPackage}>
                 Select a package
               </option>
-              <option value="starter">Starter</option>
-              <option value="business">Business Site</option>
+              <option value="starter">Starter Website</option>
+              <option value="business">Business Website</option>
               <option value="premium">Premium</option>
             </select>
           </label>
@@ -192,15 +193,15 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
 
         <div className="mt-8 flex flex-col gap-4 border-t border-[var(--line)] pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-xl text-sm leading-6 text-[var(--muted)]">
-            Review your project details, then use the payment options to secure your
-            package.
+            Submit your details first, then choose the payment option that matches your
+            website package.
           </p>
           <button
             type="submit"
             disabled={isSubmitting}
             className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)] disabled:opacity-80`}
           >
-            {isSubmitting ? "Sending..." : "Continue"}
+            {isSubmitting ? "Sending..." : "Build My Website"}
           </button>
         </div>
       </form>
@@ -236,8 +237,8 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
             Best for founder-led businesses
           </p>
           <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-            If you want a site built for you instead of piecing together a DIY builder,
-            this is where your project starts.
+            If you want a custom site without platform lock-in or monthly website
+            platform fees, this is where your project starts.
           </p>
         </div>
       </aside>
@@ -254,8 +255,8 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
             Choose your payment link and secure your website build.
           </h2>
           <p className="mt-4 text-sm leading-6 text-[var(--muted)] sm:text-base">
-            Pick the package that matches your project scope. The matching option is
-            highlighted if you arrived here from a package-specific link.
+            Pick the package that matches your project scope. You are paying for a
+            custom website build, not signing up for a DIY platform subscription.
           </p>
         </div>
 

@@ -2,9 +2,9 @@ import { CtaBanner } from "@/components/cta-banner";
 import { PageContainer } from "@/components/page-container";
 
 const points = [
-  "Steady Start exists because many business owners want a website built for them instead of spending weeks inside a DIY builder.",
-  "The service is designed around real business needs, so each project starts with what the business actually needs to communicate, sell, or support.",
-  "Everything is built with a practical, supportive approach shaped by founder experience and a clear understanding of what makes small businesses feel credible online.",
+  "Steady Start exists for business owners who want a custom website without getting stuck inside Wix, Shopify, or another monthly website platform.",
+  "Instead of sending you into a DIY builder, Steady Start creates a website around your business, your goals, and the online presence you actually need.",
+  "The goal is simple: help you get a clean, professional website without platform lock-in, confusing tools, or unnecessary monthly website fees.",
 ];
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
                 About Steady Start
               </p>
               <h1 className="mt-3 text-4xl font-semibold tracking-[-0.03em] text-[var(--foreground)] sm:text-5xl">
-                Founder-built website support for businesses that want it done right.
+                A simpler alternative to monthly website platforms.
               </h1>
             </div>
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
         </PageContainer>
       </section>
 
-      <CtaBanner buttonLabel="Get Started" />
+      <CtaBanner buttonLabel="Build My Website" />
     </>
   );
 }

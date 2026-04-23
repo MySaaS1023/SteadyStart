@@ -4,9 +4,9 @@ import { PageContainer } from "@/components/page-container";
 import { primaryButtonClass } from "@/lib/styles";
 
 const highlights = [
-  "Custom structure and design",
-  "Payment-ready setup",
-  "Built around your business goals",
+  "Custom-built for your business",
+  "No monthly platform lock-in",
+  "Simple and affordable",
 ];
 
 export function Hero() {
@@ -15,30 +15,29 @@ export function Hero() {
       <PageContainer className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="space-y-8">
           <span className="inline-flex rounded-full border border-[rgba(45,122,75,0.18)] bg-white/80 px-4 py-2 text-sm font-medium text-[var(--accent-strong)] shadow-sm">
-            Done-for-you websites for serious small businesses
+            A simpler alternative to monthly website platforms
           </span>
           <div className="space-y-5">
             <h1 className="max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-[-0.03em] text-[var(--foreground)] sm:text-5xl lg:text-6xl">
-              Get a custom website built for your business.
+              Build Your Business Website Without Monthly Platform Fees
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-[var(--muted)] sm:text-xl">
-              Steady Start helps business owners launch online with professionally built
-              websites, payment setup, and the right functionality — without figuring it
-              all out alone.
+              Get a custom website built for your business without relying on Wix,
+              Shopify, or complicated tools.
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
+            <Link
+              href="/get-started"
+              className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)]`}
+            >
+              Build My Website
+            </Link>
             <Link
               href="/pricing"
               className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)]`}
             >
               View Pricing
-            </Link>
-            <Link
-              href="/get-started"
-              className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)]`}
-            >
-              Get Started
             </Link>
           </div>
           <div className="grid gap-3 sm:grid-cols-3">
@@ -59,30 +58,34 @@ export function Hero() {
             <div className="flex items-center justify-between rounded-2xl border border-[var(--line)] bg-white px-4 py-3">
               <div>
                 <p className="text-sm font-semibold text-[var(--foreground)]">
-                  Steady Start Launch Plan
+                  Steady Start Website Build
                 </p>
                 <p className="mt-1 text-sm text-[var(--muted)]">
-                  A clear path from brief to polished website.
+                  A clear path from idea to finished business website.
                 </p>
               </div>
               <span className="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-strong)]">
-                Premium
+                Custom
               </span>
             </div>
 
             <div className="mt-6 space-y-4">
               <div className="rounded-2xl bg-[var(--foreground)] p-5 text-white">
                 <p className="text-sm uppercase tracking-[0.2em] text-white/70">
-                  What clients get
+                  What you avoid
                 </p>
                 <div className="mt-4 grid gap-4 sm:grid-cols-2">
                   <div className="rounded-2xl bg-white/8 p-4">
-                    <p className="text-2xl font-semibold">3 Packages</p>
-                    <p className="mt-2 text-sm text-white/75">Clear starting points for every business stage.</p>
+                    <p className="text-2xl font-semibold">No Lock-In</p>
+                    <p className="mt-2 text-sm text-white/75">
+                      Built without tying your business to a monthly platform.
+                    </p>
                   </div>
                   <div className="rounded-2xl bg-white/8 p-4">
-                    <p className="text-2xl font-semibold">1 Intake Flow</p>
-                    <p className="mt-2 text-sm text-white/75">A simple project handoff without messy back-and-forth.</p>
+                    <p className="text-2xl font-semibold">No DIY Setup</p>
+                    <p className="mt-2 text-sm text-white/75">
+                      Skip the templates, plugins, and confusing builder tools.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -90,21 +93,21 @@ export function Hero() {
               <div className="grid gap-4 sm:grid-cols-[0.9fr_1.1fr]">
                 <div className="rounded-2xl border border-[var(--line)] bg-white p-5">
                   <p className="text-sm font-semibold text-[var(--foreground)]">
-                    Built for trust
+                    Built for clarity
                   </p>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Clean layouts, strong messaging, and the right structure for your
-                    offers.
+                    A clean online presence that explains what your business does and
+                    helps customers take the next step.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-[var(--line)] bg-[var(--accent-soft)] p-5">
                   <p className="text-sm font-semibold text-[var(--accent-strong)]">
-                    Launch-ready details
+                    Website-first setup
                   </p>
                   <ul className="mt-3 space-y-2 text-sm leading-6 text-[var(--foreground)]">
-                    <li>Payment setup</li>
-                    <li>Booking and integration planning</li>
-                    <li>Business-first structure</li>
+                    <li>Custom website build</li>
+                    <li>Payment and integration options</li>
+                    <li>No unnecessary platform tools</li>
                   </ul>
                 </div>
               </div>
