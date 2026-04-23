@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CtaBanner } from "@/components/cta-banner";
+import { EmailCapture } from "@/components/email-capture";
 import { Hero } from "@/components/hero";
 import { PageContainer } from "@/components/page-container";
 import { PricingCard } from "@/components/pricing-card";
@@ -227,6 +228,12 @@ export default function HomePage() {
               </p>
             </Link>
           </div>
+        </PageContainer>
+      </section>
+
+      <section className="py-8 sm:py-14">
+        <PageContainer>
+          <EmailCapture />
         </PageContainer>
       </section>
 

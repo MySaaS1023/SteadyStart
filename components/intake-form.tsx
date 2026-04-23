@@ -34,7 +34,8 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
       email: String(formData.get("email") ?? ""),
       phone: String(formData.get("phone") ?? ""),
       businessName: String(formData.get("businessName") ?? ""),
-      selectedPackage: packageLabelMap[String(formData.get("selectedPackage")) as PackageKey] ?? "",
+      selectedPackage:
+        packageLabelMap[String(formData.get("selectedPackage")) as PackageKey] ?? "",
       businessType: String(formData.get("businessType") ?? ""),
       serviceModel: String(formData.get("serviceModel") ?? ""),
       integrations: String(formData.get("integrations") ?? ""),
@@ -151,11 +152,7 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
           </label>
           <label className="block text-sm font-medium text-[var(--foreground)]">
             Is your business service-based or product-based?
-            <select
-              name="serviceModel"
-              className={inputClassName}
-              defaultValue=""
-            >
+            <select name="serviceModel" className={inputClassName} defaultValue="">
               <option value="" disabled>
                 Select one
               </option>
@@ -201,7 +198,7 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
             disabled={isSubmitting}
             className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)] disabled:opacity-80`}
           >
-            {isSubmitting ? "Sending..." : "Build My Website"}
+            {isSubmitting ? "Sending..." : "Submit"}
           </button>
         </div>
       </form>
@@ -222,7 +219,9 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
                 }`}
               >
                 <div className="flex items-center justify-between gap-4">
-                  <p className="text-base font-semibold text-[var(--foreground)]">{pkg.name}</p>
+                  <p className="text-base font-semibold text-[var(--foreground)]">
+                    {pkg.name}
+                  </p>
                   <p className="text-base font-semibold text-[var(--accent-strong)]">
                     {pkg.price}
                   </p>
@@ -277,15 +276,23 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
                   {isSelected ? "Selected Package" : "Secure Your Build"}
                 </p>
                 <div className="mt-4">
-                  <p className="text-2xl font-semibold text-[var(--foreground)]">{pkg.name}</p>
-                  <p className="mt-2 text-base font-medium text-[var(--muted)]">{pkg.price}</p>
+                  <p className="text-2xl font-semibold text-[var(--foreground)]">
+                    {pkg.name}
+                  </p>
+                  <p className="mt-2 text-base font-medium text-[var(--muted)]">
+                    {pkg.price}
+                  </p>
                 </div>
                 <a
                   href={PAYMENT_LINKS[pkg.key]}
                   className={`${primaryButtonClass} force-white-btn mt-6 text-sm shadow-[var(--shadow)]`}
                   aria-label={`Pay for ${pkg.name} with Stripe`}
                 >
-                  {`Pay for ${pkg.name} — ${pkg.price}`}
+                  {pkg.key === "starter"
+                    ? "Secure My Starter Website"
+                    : pkg.key === "business"
+                      ? "Secure My Business Website"
+                      : "Secure My Premium Website"}
                 </a>
               </div>
             );

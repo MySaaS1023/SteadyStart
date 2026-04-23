@@ -48,7 +48,7 @@ export function PricingCard({ tier }: PricingCardProps) {
         className={`${primaryButtonClass} force-white-btn mt-8 text-sm shadow-[var(--shadow)]`}
         aria-label={`Pay for ${tier.name} with Stripe`}
       >
-        Build My Website
+        Buy Now
       </a>
     </div>
   );
