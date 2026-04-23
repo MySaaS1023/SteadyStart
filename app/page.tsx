@@ -149,6 +149,87 @@ export default function HomePage() {
         </PageContainer>
       </section>
 
+      <section className="py-8 sm:py-14">
+        <PageContainer>
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+              Resources
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[var(--foreground)] sm:text-4xl">
+              Explore Simpler Website Alternatives
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)] sm:text-lg">
+              Looking for a simpler alternative to monthly website platforms? Explore
+              these guides to compare your options and find the right path for your
+              business.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+            <Link
+              href="/shopify-alternative"
+              className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm transition hover:border-[rgba(45,122,75,0.24)]"
+            >
+              <p className="text-lg font-semibold tracking-[-0.02em] text-[var(--foreground)]">
+                Shopify Alternative
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                See why business owners look for a simpler alternative to Shopify.
+              </p>
+            </Link>
+
+            <Link
+              href="/wix-alternative"
+              className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm transition hover:border-[rgba(45,122,75,0.24)]"
+            >
+              <p className="text-lg font-semibold tracking-[-0.02em] text-[var(--foreground)]">
+                Wix Alternative
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                Learn why many businesses outgrow Wix and want more flexibility.
+              </p>
+            </Link>
+
+            <Link
+              href="/squarespace-alternative"
+              className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm transition hover:border-[rgba(45,122,75,0.24)]"
+            >
+              <p className="text-lg font-semibold tracking-[-0.02em] text-[var(--foreground)]">
+                Squarespace Alternative
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                Compare a custom website approach to the limits of Squarespace.
+              </p>
+            </Link>
+
+            <Link
+              href="/custom-website-vs-wix"
+              className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm transition hover:border-[rgba(45,122,75,0.24)]"
+            >
+              <p className="text-lg font-semibold tracking-[-0.02em] text-[var(--foreground)]">
+                Custom Website vs Wix
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                Understand the difference between a custom website and a DIY platform.
+              </p>
+            </Link>
+
+            <Link
+              href="/website-without-monthly-fees"
+              className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm transition hover:border-[rgba(45,122,75,0.24)]"
+            >
+              <p className="text-lg font-semibold tracking-[-0.02em] text-[var(--foreground)]">
+                Website Without Monthly Fees
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                Learn how to build your business website without recurring platform
+                costs.
+              </p>
+            </Link>
+          </div>
+        </PageContainer>
+      </section>
+
       <CtaBanner />
     </>
   );
