@@ -1,9 +1,29 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
 import { CtaBanner } from "@/components/cta-banner";
 import { Hero } from "@/components/hero";
 import { PageContainer } from "@/components/page-container";
 import { PricingCard } from "@/components/pricing-card";
 import { ProcessSection } from "@/components/process-section";
 import { pricingPackages, valueProps } from "@/lib/site-data";
+import { primaryButtonClass } from "@/lib/styles";
+
+const homeTitle = "Steady Start | Custom Business Websites Without Monthly Fees";
+const homeDescription =
+  "Steady Start helps business owners create custom websites without relying on Wix, Shopify, or other monthly website platforms.";
+
+export const metadata: Metadata = {
+  title: homeTitle,
+  description: homeDescription,
+  openGraph: {
+    title: homeTitle,
+    description: homeDescription,
+    url: "https://www.steadystartco.com",
+    siteName: "Steady Start",
+    type: "website",
+  },
+};
 
 export default function HomePage() {
   return (
@@ -26,7 +46,8 @@ export default function HomePage() {
                 <p>Too many tools you don&apos;t actually need.</p>
               </div>
               <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
-                Steady Start gives you a simpler way to get your business online.
+                Steady Start gives you a simpler way to build your business website
+                without getting stuck in monthly tools.
               </p>
             </div>
           </div>
@@ -46,13 +67,20 @@ export default function HomePage() {
             </div>
             <div className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm sm:p-8">
               <p className="text-base leading-8 text-[var(--muted)] sm:text-lg">
-                Steady Start helps business owners get a custom website built without
-                platform lock-in, confusing setup, or piling monthly fees.
+                Steady Start helps business owners get a custom website built for their
+                business without platform lock-in, confusing setup, or monthly website
+                fees.
               </p>
               <p className="mt-5 text-base leading-8 text-[var(--muted)] sm:text-lg">
-                You get a clear path to a finished site that&apos;s built for your
-                business.
+                It is an alternative to Wix and an alternative to Shopify for business
+                owners who want a clear path to a finished site that is built for them.
               </p>
+              <Link
+                href="/shopify-alternative"
+                className="mt-6 inline-flex text-sm font-semibold text-[var(--accent-strong)] transition hover:text-[var(--foreground)]"
+              >
+                Looking for a Shopify alternative?
+              </Link>
             </div>
           </div>
         </PageContainer>
@@ -92,7 +120,7 @@ export default function HomePage() {
                 Pricing Preview
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[var(--foreground)] sm:text-4xl">
-                Simple Pricing - No Monthly Platform Fees
+                Simple Pricing — No Monthly Platform Fees
               </h2>
             </div>
             <p className="max-w-md text-sm leading-6 text-[var(--muted)]">
@@ -110,6 +138,14 @@ export default function HomePage() {
           <p className="mt-8 text-center text-sm leading-6 text-[var(--muted)]">
             No platform lock-in. No unnecessary tools. No monthly website platform fees.
           </p>
+          <div className="mt-5 text-center">
+            <Link
+              href="/shopify-alternative"
+              className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)]`}
+            >
+              Looking for a Shopify alternative?
+            </Link>
+          </div>
         </PageContainer>
       </section>
 
