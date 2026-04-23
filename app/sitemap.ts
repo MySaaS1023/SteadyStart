@@ -12,6 +12,7 @@ const routes = [
   "/terms",
   "/disclaimer",
   "/shopify-alternative",
+  "/wix-alternative",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
