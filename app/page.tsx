@@ -8,7 +8,6 @@ import { PageContainer } from "@/components/page-container";
 import { PricingCard } from "@/components/pricing-card";
 import { ProcessSection } from "@/components/process-section";
 import { pricingPackages, valueProps } from "@/lib/site-data";
-import { primaryButtonClass } from "@/lib/styles";
 
 const homeTitle = "Steady Start | Custom Business Websites Without Monthly Fees";
 const homeDescription =
@@ -139,14 +138,6 @@ export default function HomePage() {
           <p className="mt-8 text-center text-sm leading-6 text-[var(--muted)]">
             No platform lock-in. No unnecessary tools. No monthly website platform fees.
           </p>
-          <div className="mt-5 text-center">
-            <Link
-              href="/shopify-alternative"
-              className={`${primaryButtonClass} force-white-btn text-sm shadow-[var(--shadow)]`}
-            >
-              Looking for a Shopify alternative?
-            </Link>
-          </div>
         </PageContainer>
       </section>
 
