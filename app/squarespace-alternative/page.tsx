@@ -76,6 +76,36 @@ export default function SquarespaceAlternativePage() {
         </PageContainer>
       </section>
 
+      <section className="py-8 sm:py-14">
+        <PageContainer>
+          <div className="rounded-[2rem] border border-[var(--line)] bg-white/85 p-6 shadow-sm sm:p-8">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--foreground)]">
+                Compare Other Website Platform Alternatives
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                Explore other simpler alternatives for building your business website
+                without monthly platform fees.
+              </p>
+            </div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <Link
+                href="/shopify-alternative"
+                className="rounded-2xl border border-[var(--line)] bg-white/80 px-5 py-4 text-sm font-semibold text-[var(--accent-strong)] transition hover:text-[var(--foreground)]"
+              >
+                Shopify Alternative
+              </Link>
+              <Link
+                href="/wix-alternative"
+                className="rounded-2xl border border-[var(--line)] bg-white/80 px-5 py-4 text-sm font-semibold text-[var(--accent-strong)] transition hover:text-[var(--foreground)]"
+              >
+                Wix Alternative
+              </Link>
+            </div>
+          </div>
+        </PageContainer>
+      </section>
+
       <section className="py-16 sm:py-20">
         <PageContainer>
           <div className="rounded-[2rem] border border-[rgba(45,122,75,0.18)] bg-[linear-gradient(135deg,rgba(18,32,23,0.98),rgba(31,93,56,0.92))] px-6 py-10 text-white shadow-[var(--shadow)] sm:px-10 sm:py-12">
