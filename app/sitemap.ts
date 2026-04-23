@@ -16,6 +16,8 @@ const routes = [
   "/squarespace-alternative",
   "/custom-website-vs-wix",
   "/website-without-monthly-fees",
+  "/custom-website-vs-shopify",
+  "/custom-website-vs-squarespace",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
