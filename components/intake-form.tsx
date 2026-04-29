@@ -58,7 +58,7 @@ export function IntakeForm({ selectedPackage }: IntakeFormProps) {
         throw new Error("Unable to send project request.");
       }
 
-      router.push("/success?type=request");
+      router.push("/thank-you");
     } catch {
       window.alert("There was a problem sending your project details. Please try again.");
     } finally {
